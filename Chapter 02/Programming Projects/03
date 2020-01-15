@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+#define M_PI 3.14159265358979323846
+
+int main()
+{
+    int r;
+    
+    
+    printf("Please enter the radius to compute volume:");
+    scanf("%d", &r);
+    
+    float v = (4.0f/3.0f) * (M_PI) * (r * r * r);
+    printf("The volume of a sphere is: %.2f cubic meters.\n", v);
+    
+    return 0;
+}

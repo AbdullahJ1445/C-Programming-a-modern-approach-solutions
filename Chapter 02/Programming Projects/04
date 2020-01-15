@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float amount;
+    
+    printf("Enter an amount: ");
+    scanf("%f", &amount);
+    
+    float WithTax = (amount * 0.05) + amount;
+    
+    printf("With tax added: $%.2f", WithTax);
+    
+    return 0;
+}

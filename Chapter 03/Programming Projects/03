@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+  int gsi, grpIdentifier, pubCode, itemNum, chkDigit;
+
+  printf("Enter ISBN: ");
+  scanf("%d-%d-%d-%d-%d", &gsi, &grpIdentifier, &pubCode, &itemNum, &chkDigit);
+
+  printf("GSI prefix: %d\nGroup identifier; %d\nPublisher code: %d\nItem number: %d\nCheck digit: %d\n", gsi, grpIdentifier, pubCode, itemNum, chkDigit);
+
+  return 0;
+}

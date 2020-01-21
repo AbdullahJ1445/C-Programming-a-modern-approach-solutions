@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int month, day, year, month1, day1, year1, earlier;
+    
+    printf("Enter first date (mm/dd/yy): ");
+    scanf("%2d/%2d/%2d", &month, &day, &year);
+    
+    printf("Enter second date (mm/dd/yy): ");
+    scanf("%2d/%2d/%2d", &month1, &day1, &year1);
+    
+    if (year > year1){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month1, day1, year1, month, day, year);
+    }
+    else if (year1 > year){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month, day, year, month1, day1, year1);
+    }
+    else if (month > month1){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month1, day1, year1, month, day, year);
+    }
+    else if (month1 > month){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month, day, year, month1, day1, year1);
+    }
+    else if (day > day1){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month1, day1, year1, month, day, year);
+    }
+    else if (day1 > day){
+        printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month, day, year, month1, day1, year1);
+    }
+    else{
+        printf("Both dates are the same");
+    }
+    return 0;
+}

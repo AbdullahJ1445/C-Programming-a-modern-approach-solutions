@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int hour, minute, min_midnight, dep_times = 480, dep_times2 = 583, dep_times3 = 679, dep_times4 = 767, dep_times5 = 840, dep_times6 = 945, dep_times7 = 1140, dep_times8 = 1305 ;
+    
+    printf("Enter a 24-hour time: ");
+    scanf("%d : %d", &hour, &minute);
+    
+    min_midnight = (hour * 60) + minute;
+ 
+    if ( min_midnight <= (dep_times + dep_times2)/ 2 ){
+        printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.");
+    }
+    else if ( min_midnight < (dep_times2 + dep_times3)/ 2 ){
+        printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
+    }
+    else if ( min_midnight < (dep_times3 + dep_times4)/ 2 ){
+        printf("Closest departure time is 11:19 a.m., arriving at 1:31 p.m.");
+    }
+    else if ( min_midnight < (dep_times4 + dep_times5)/ 2 ){
+        printf("Closest departure time is 12:47 p.m., arriving at 3:00 p.m.");
+    }
+    else if ( min_midnight < (dep_times5 + dep_times6)/ 2 ){
+        printf("Closest departure time is 2:00 p.m., arriving at 4:08 p.m.");
+    }
+    else if ( min_midnight < (dep_times6 + dep_times7)/ 2 ){
+        printf("Closest departure time is 3:45 p.m., arriving at 5:55 p.m.");
+    }
+    else if ( min_midnight < (dep_times7 + dep_times8)/ 2 ){
+        printf("Closest departure time is 7:00 p.m., arriving at 9:20 p.m.");
+    }
+    else {
+        printf("Closest departure time is 9:45 p.m., arriving at 11:58 p.m.");
+    }
+    
+    return 0;
+}
